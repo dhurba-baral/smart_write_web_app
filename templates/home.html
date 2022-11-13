@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,9 +10,9 @@
 	<header>
 		<div class="container">
 		<div id="brandname">
-			Machine Learning App with Flask
+			
 		</div>
-		<h2>Smart Write: Nepali Autocompletion</h2>
+		<h2>Web App for Smart Write</h2>
 		
 	</div>
 	</header>
@@ -22,19 +20,16 @@
 	<div class="ml-container">
 
 		<form action="{{ url_for('predict')}}" method="POST">
-		<p>Enter text</p>
+		<p>Enter context phrase</p>
 		<!-- <input type="text" name="comment"/> -->
-		<textarea name="message" rows="4" cols="50"></textarea>
+		<textarea name="context_phrase" rows="4" cols="50"></textarea>
 		<br/>
 
-		<input type="submit" class="btn-info" value="predict">
+		<input type="submit" class="btn-info" value="Predict">
 		
 	</form>
 		
 	</div>
-
-	
-	
 
 </body>
 </html>

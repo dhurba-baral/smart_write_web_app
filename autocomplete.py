@@ -111,7 +111,7 @@ def predict():
 
         predcited_phrase=' '.join(predcited_phrase)
 
-    return render_template('result.html', prediction=predcited_phrase)
+    return render_template('result.html', prediction_text=predcited_phrase)
 
 if __name__ == '__main__':
     app.run(debug=True)
